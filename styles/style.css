@@ -1,0 +1,33 @@
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 300px; /* Adjust the width as needed */
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color */
+    color: #333; /* Text color */
+    text-align: center;
+}
+
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p { padding: 0;}
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #333;
+    text-align: center;
+  }
+  
