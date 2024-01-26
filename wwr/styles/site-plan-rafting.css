@@ -60,7 +60,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
+  color: var(--primary-color);
   background-color: var(--nav-hover-background-color);
 }
 
