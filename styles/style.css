@@ -1,15 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main {
     max-width: 840px;
 }
 
 aside {
-    width: 300px; /* Adjust the width as needed */
+    width: 20em; /* Adjust the width as needed */
     margin: 20px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     padding: 20px;
     background-color: #f0f0f0; /* Background color */
     color: #333; /* Text color */
     text-align: center;
+    
 }
 
 aside img {
@@ -20,9 +26,15 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    float: right;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.53);
+ 
 }
 
-p { padding: 0;}
+p { 
+    padding: 0;
+    
+}
 
 footer {
     margin-top: 20px;
@@ -30,3 +42,33 @@ footer {
     text-align: center;
 }
   
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1); 
+    background-color: gainsboro;
+    color: #000;
+    overflow: hidden;
+
+   
+}
+
+h1 {
+    color: #2980B9;
+}
+
+
+/* specific class selector */
+div.box > p {
+    text-align: left;
+    
+}
+
+aside.box > h2 {
+    position: relative;
+    top: 35px;
+    left: 0;
+    
+  }
