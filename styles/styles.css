@@ -7,28 +7,6 @@ main {
     max-width: 840px;
 }
 
-aside {
-    width: 20em; /* Adjust the width as needed */
-    margin: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    background-color: #f0f0f0; /* Background color */
-    color: #333; /* Text color */
-    text-align: center;
-    position: relative;
-    
-}
-
-nav {
-    background-color: #2980B9;
-    padding: 10px;
-
-}
-aside img {
-    width: 200px;
-    height: auto;
-}
-
 main img {
     width: 150px;
     height: auto;
@@ -37,15 +15,45 @@ main img {
     margin: 0 0 1rem 1rem;
 }
 
+aside {
+    width: 20em; 
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #f0f0f0; 
+    color: #333; /* Text color */
+    text-align: center;
+    position: relative; 
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 130px;   
+  }
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+nav {
+    background-color: #2980B9;
+    padding: 10px;
+}
+
 p { 
-    padding: 0;
-    
+    padding: 0;  
 }
 
 footer {
     margin-top: 20px;
     border-top: 2px solid #333;
     text-align: center;
+}
+
+h1 {
+    color: #2980B9;
 }
   
 /* Class Selectors */
@@ -57,24 +65,9 @@ footer {
     background-color: gainsboro;
     color: #000;
     overflow: hidden;
-
-   
 }
-
-h1 {
-    color: #2980B9;
-}
-
 
 /* specific class selector */
 div.box > p {
-    text-align: left;
-    
+    text-align: left;    
 }
-
-aside h2 {
-    position: absolute;
-    top: 20px;
-    left: 130px;
-    
-  }
