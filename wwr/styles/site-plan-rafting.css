@@ -45,6 +45,7 @@ nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
+  
 }
 
 nav a {
@@ -64,3 +65,6 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+div.hero > img{
+  width: 40px;
+}

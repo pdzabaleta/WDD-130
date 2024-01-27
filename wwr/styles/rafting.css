@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
+:root {
+    --primary-color: #228b22;
+    --secondary-color: #d3d3d3;
+    --accent1-color: #139036;
+    --accent2-color: #001f3f;
+  
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+  
+    --nav-background-color: #f8f8f8;
+    --nav-link-color: #333;
+    --nav-hover-link-color: #555;
+    --nav-hover-background-color: transparent;
+    --nav-text-color: #333;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: 400;
+  }
+
+  p {
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+  }
+
+  .sociallinks a, .navbar a {
+    text-decoration: none;
+    color: var(--accent2-color);
+  }
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    width: 82%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center; 
+}
+
+.hero article {
+    position: absolute;
+    top: 50%; 
+    left: 20%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px; 
+    width: 800px; 
+    color: #fff; 
+}
+
+.hero article img {
+    float: right;
+    margin: 20px;
+    width: 100px;
+    border-radius: 100%;
+    height: auto;
+}
+
+.hero p {
+    color: white;
+    float: left;
+    width: 80%;
+    font-family: var(--paragraph-font);
+}
