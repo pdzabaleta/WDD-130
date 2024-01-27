@@ -33,7 +33,7 @@
     font-family: var(--paragraph-font);
   }
 
-  .sociallinks a, .navbar a {
+  .sociallinks a, nav a {
     text-decoration: none;
     color: var(--accent2-color);
   }
