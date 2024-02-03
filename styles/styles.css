@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --heading-font-weight: 400;
+    --paragraph-font-weight: 300;
+}
+
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Main Styles */
 main {
     max-width: 840px;
 }
@@ -11,63 +22,110 @@ main img {
     width: 150px;
     height: auto;
     float: right;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.53);
     margin: 0 0 1rem 1rem;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.53);
 }
 
+/* Aside Styles */
 aside {
-    width: 20em; 
+    width: 20em;
     margin: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
     padding: 20px;
-    background-color: #f0f0f0; 
-    color: #333; /* Text color */
+    background-color: #f0f0f0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: #333;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
 aside h2 {
     position: absolute;
     top: 20px;
-    left: 130px;   
-  }
+    left: 130px;
+    font-family: var(--font-family);
+    font-weight: var(--heading-font-weight);
+}
 
 aside img {
     width: 200px;
     height: auto;
 }
 
+/* Navigation Styles */
 nav {
-    background-color: #2980B9;
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-p { 
-    padding: 0;  
+nav a {
+    color: #f8f8f8;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: var(--heading-font-weight);
+    font-family: var(--font-family);
 }
 
+/* Paragraph Styles */
+p {
+    padding: 0;
+    font-family: var(--font-family);
+    font-weight: var(--paragraph-font-weight);
+}
+
+/* Footer Styles */
 footer {
     margin-top: 20px;
     border-top: 2px solid #333;
     text-align: center;
 }
 
+/* Header Styles */
 h1 {
     color: #2980B9;
+    font-family: var(--font-family);
+    font-weight: var(--heading-font-weight);
 }
-  
-/* Class Selectors */
 
+/* Box Styles */
 .box {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1); 
     background-color: gainsboro;
+    border: 1px solid rgba(0, 0, 0, .1);
     color: #000;
     overflow: hidden;
+    font-family: var(--font-family);
+    font-weight: var(--paragraph-font-weight);
 }
 
-/* specific class selector */
+/* Specific Class Selector */
 div.box > p {
-    text-align: left;    
+    text-align: left;
+}
+
+/* Header and Footer Max-width */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+main {
+    grid-column: 2/3;
+}
+
+aside {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
