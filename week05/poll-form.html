@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <title>WDD130</title>
+</head>
+<body>
+    <header>
+        <main>
+            <h1>HTML Form - User Poll Activity</h1>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname"><br>
+                </div>
+                <div class="form-item column2">
+                    <label for="usermail">Email</label>
+                    <input type="email" id="usermail" name="usermail">
+                </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Questions</legend>
+                <div class="form-item column1">    
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari" selected>Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                </div>
+                <div class="form-item column1"> 
+                    <label for="pet">Do you have a household pel?</label>
+                    <input type="checkbox" id="pet" name="pet"><br>
+                </div>    
+                    <label for="comment">List the places you have lived:</label>
+                    <textarea name="comment" id="comment" placeholder="Type your feedback"></textarea>
+                
+                </fieldset>
+                <button>Submit Poll</button>
+            </form>
+        </main>
+    </header>
+    <footer>
+        <p>©2024 | HTML Form - User Poll Activity | Pablo Zabaleta</p>
+    </footer>
+</body>
+</html>
