@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
     <title>HTML & CSS</title>
 </head>
 <body>
@@ -10,9 +11,29 @@
         <h1>Basic HTML and CSS Quiz</h1>
     </head>
     <form>
-        
-        </fieldset>
-
+        <div class="question-container">
+           <label for="q1">1. </label> What does the acronym CSS stand for?
+           <input type="text" id="q1" name="q1"><br>
+        </div>
+        <div class="question-container">
+            <label for="q2">2. </label> How are id and class attributes selected in CSS?
+            <textarea name="q2" id="q2"></textarea>
+         </div>
+         <div class="question-container">
+            <label for="q3">3. </label> Which of the following is a valid CSS comment?
+            <select name="q3" id="q3">
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="option1">/* This is a valid CSS comment */</option>
+                <option value="option2">*/ This comment spans multiple lines */</option>
+                <option value="option3">/* This comment/* includes special characters: @#$%& */</option>
+            </select>
+        </div>
+        <div class="question-container">
+            <label for="q4">4. </label> <span>What is the button margin given this declaration?</span>
+            <textarea class="q4_example" disabled id="q4_example" placeholder="margin: 10px 5px 15px;">margin: 10px 5px 15px;</textarea>
+            <input type="number" name="q4" id="q4">
+        </div>
+        <button>Submit Quiz</button>
     </form>
     <footer>©2024 | HTML Form - User Poll Activity | Pablo Zabaleta</footer>
 </body>
