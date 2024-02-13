@@ -283,6 +283,10 @@ textarea[name="message"] {
   grid-row: 1/2;
 }
 
+.question-div_personal label{
+  display: none;
+}
+
 button {
   border: none;
   background-color: #ff7022;
