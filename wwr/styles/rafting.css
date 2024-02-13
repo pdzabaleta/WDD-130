@@ -401,3 +401,12 @@ span {
   font-weight: bold;
   margin: 5px 0;
 }
+
+footer a{
+  text-decoration: none;
+  color: blue;
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  
+  
+}
