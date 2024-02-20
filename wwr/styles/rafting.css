@@ -1,6 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Reset and General Styles */
 :root {
   --primary-color: #d04900;
@@ -520,4 +521,279 @@ footer a{
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
+}
+
+/* //////////////Here start stytes for Home index.html page///////////////// */
+/* Styles for the main container */
+.main_index {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  row-gap: 5px;
+}
+
+/* Styles for the image container */
+.image-container {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  overflow: hidden;
+  box-shadow: 0px -4px 15px -7px rgba(0, 0, 0, 0.69);
+}
+
+/* Styles for images inside the container */
+.image-container img {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+/* Zoom animation */
+.zoom {
+  animation: zoom 15s ease-in-out infinite alternate;
+}
+
+/* Keyframes for the zoom animation */
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Styles for title and subtitle */
+.h2_div {
+  position: relative;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+/* Icon for the title */
+.h2_div span:nth-of-type(1) {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 50px;
+}
+
+/* Styles for the title */
+.h2_div h2 {
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-size: 5em;
+  margin: 0;
+  font-weight: 800;
+}
+
+/* Subtitle */
+.h2_div span:nth-of-type(2) {
+  font-family: "Raleway";
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Video container */
+.video-container {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  width: 100%;
+  height: fit-content;
+  border-top: 2px #e06a1a solid;
+  overflow: hidden;
+}
+
+/* Video inside the container */
+.video-container video {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+/* Additional content over the video */
+.video-background {
+  background-color: rgba(236, 236, 236, 0.5);
+  grid-column: 1/3;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* Title over the video */
+.video-background h3 {
+  color: rgb(79, 37, 0);
+  font-family: "Raleway";
+  font-size: 3vh;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 0 0;
+}
+
+/* Text over the video */
+.video-background span {
+  color: rgb(79, 37, 0);
+  font-family: "Raleway";
+  font-size: 2vh;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Paragraph over the video */
+.video-background p {
+  color: rgb(79, 37, 0);
+  font-weight: 400;
+  font-family: "Raleway";
+  font-size: 2vh;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+  text-align: justify;
+  margin: 0 40px 10px 0;
+}
+
+/* Image over the video */
+.video-background img {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 70%;
+  height: auto;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Home trips container */
+.home_trips {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  background-color: #ececec;
+}
+
+/* Title for home trips */
+.home_trips h3 {
+  grid-column: 1/5;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Raleway";
+  margin: 10px;
+  color: rgb(79, 37, 0);
+}
+
+/* Additional text for home trips */
+.home_trips span {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Raleway";
+  font-style: italic;
+}
+
+/* Images for home trips */
+.home_trips img {
+  width: 90%;
+  height: 90%;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto;
+  transition: all 0.3s ease;
+}
+
+/* Zoom effect on hover for home trips images */
+.home_trips img:hover {
+  transform: scale(1.1);
+}
+
+/* Styles for links in home trips */
+.home_trips a {
+  display: block;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Index division */
+.index_div {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  background-color: #353c2a;
+  height: 300px;
+}
+
+/* Index content container */
+.index_cont {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-self: center;
+  background-color: rgba(236, 236, 236, 0.2);
+  border-radius: 8px;
+  margin: 0 20px;
+}
+
+/* Input fields in index content */
+.index_cont input {
+  margin: 10px 0;
+  height: 30px;
+  outline: none;
+  background-color: #c6c9c3;
+  border: none;
+}
+
+/* Form text */
+.form_text {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  font-family: "PT sans";
+  padding: 10px;
+  align-self: center;
+  text-align: left;
+}
+
+/* Form title */
+.form_text h3 {
+  margin: 20px 30px;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 600;
+}
+
+/* Form paragraph */
+.form_text p {
+  color: white;
+  font-size: 0.9em;
+  margin: 20px 30px;
+  font-weight: 400;
 }
