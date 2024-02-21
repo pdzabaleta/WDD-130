@@ -140,13 +140,12 @@ main {
 }
 
 /* Section 2 Styles */
-/* Section 2 Styles */
 .section2 {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(2, auto);
-  gap: 10px; /* Espacio entre las celdas */
+  gap: 10px;
   grid-column: 1/5;
 }
 
@@ -154,7 +153,6 @@ main {
   grid-column: 1/6;
   display: flex;
   justify-content: space-around;
-  /* Permitir que las imágenes se envuelvan en varias filas si es necesario */
 }
 
 figure {
@@ -163,7 +161,6 @@ figure {
 
 figure img {
   width: 100%;
-  /* max-width: 150px; Establecer un ancho máximo para las imágenes */
   height: auto;
 }
 
